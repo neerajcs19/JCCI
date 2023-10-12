@@ -2,6 +2,107 @@
 
 
 body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #337ab7;
+    list-style: none;
+}
+
+.navbar-left {
+    padding: 10px;
+}
+
+.logo img {
+    max-width: 120px;
+    height: 120px;
+    margin-left: 10px;
+}
+
+.navbar-right ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-right li {
+    margin-right: 30px;
+    color: #337ab7;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: #337ab7;
+    transition: color 0.3s;
+    justify-content: space-between;
+    font-size: 23px;
+   
+}
+
+.navbar-right a:hover {
+    color: #f35307;
+}
+.login-button {
+    background-color: #337ab7;
+    padding: 10px 20px;
+    margin-right: 50px;
+    border-radius: 10px; 
+    font-size: 20px;
+   
+   
+     
+}
+
+.login-link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.login-link:hover {
+    color: #f35307;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    
+    .navbar-left, .navbar-right {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .navbar-right ul {
+        flex-direction: column;
+    }
+    
+    .navbar-right li {
+        margin: 10px 0;
+    }
+    .login-button {
+        padding: 10px 20px;
+    }
+}
+
+
+
+body {
     min-height: 100vh;
     margin: 0;
     display: flex;
@@ -35,7 +136,7 @@ footer a {
     color: blue; /* Text color for links */
 }
 ul {
-    list-style-type: none;
+    list-style: none;
     /* text-align: justify; */
 }
 
@@ -50,4 +151,46 @@ ul {
 
 #footer-copyright {
     background-color: black;
+}
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+footer {
+    background-color: #337ab7; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding for top and bottom */
+}
+
+/* CSS for the footer links */
+footer .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+}
+
+footer .footer-column {
+    flex: 1;
+    margin: 0 15px; /* Add spacing between columns */
+}
+
+footer a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Text color for links */
+}
+
+h3 {
+    font-size: 18px;
 }
